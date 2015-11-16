@@ -14,7 +14,7 @@ beerSchema.methods.info = function() {
 }
 
 //sets variable for schema
-var Beer = mongoose.model('Beer', userSchema)
+var Beer = mongoose.model('Beer', beerSchema)
 
 //exports module
 module.exports = Beer

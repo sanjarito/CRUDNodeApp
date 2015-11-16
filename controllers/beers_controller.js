@@ -1,9 +1,9 @@
 var Beer = require('../models/beer.js')
 
 function index(req, res){
-  Beer.find({}, function(err, beer){
+  Beer.find({}, function(err, beers){
     if (err) console.log(err)
-    res.json(beer)
+    res.json(beers)
   })
 }
 
